@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
     self.buttonSave.enabled = NO;
     self.datePicker.minimumDate = [NSDate date];
     
@@ -29,7 +29,7 @@
     
     UITapGestureRecognizer * handleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleEndEditing)];
     [self.view addGestureRecognizer:handleTap];
-
+    
 }
 
 
@@ -49,14 +49,14 @@
         if([self.eventDate compare:[NSDate date]] == NSOrderedSame){
             [self showAlertWithMessage:@"Дата будущего события не может совпадать с текущей датой"];
         }
-         else if([self.eventDate compare:[NSDate date]] == NSOrderedAscending){
-              [self showAlertWithMessage:@"Дата будущего события не может быть ранее текущей даты"];
+        else if([self.eventDate compare:[NSDate date]] == NSOrderedAscending){
+            [self showAlertWithMessage:@"Дата будущего события не может быть ранее текущей даты"];
         }else{
-             [self setNotification];
+            [self setNotification];
         }
-
+        
     }else{
-           [self showAlertWithMessage:@"Для сохранения события значение даты должно быть поздним"];
+        [self showAlertWithMessage:@"Для сохранения события значение даты должно быть поздним"];
     }
     
     
@@ -89,29 +89,29 @@
 }
 
 - (void) handleEndEditing{
-    if(self.textField.text.length>0){
-        self.buttonSave.enabled =YES;
-    }
-   [self.view endEditing:YES];
+    [self validateTextView];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     if([textField isEqual:self.textField]){
-         [self.view endEditing:YES];
-       
-            if(self.textField.text.length>0){
-                self.buttonSave.enabled =YES;
-                 return YES;
-            }else{
-                [self showAlertWithMessage:@"Для сохранения события введите текст в текстовое поле"];
-            }
-          self.buttonSave.enabled =NO;
-        
+        return [self validateTextView];
     }
     
-     return NO;
-   
+    return NO;
+    
+}
+
+-(BOOL) validateTextView{
+    if(self.textField.text.length>0){
+        [ self.view endEditing:YES];
+        self.buttonSave.enabled =YES;
+        return YES;
+    }else{
+        [self showAlertWithMessage:@"Для сохранения события введите текст в текстовое поле"];
+        self.buttonSave.enabled =NO;
+        return NO;
+    }
 }
 
 - (void) showAlertWithMessage: (NSString *) message{
@@ -121,3 +121,4 @@
 }
 
 @end
+
