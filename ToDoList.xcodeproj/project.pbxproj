@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		122114811FC4BE5A00E96850 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 122114801FC4BE5A00E96850 /* AppDelegate.m */; };
-		122114841FC4BE5A00E96850 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122114831FC4BE5A00E96850 /* ViewController.m */; };
+		122114841FC4BE5A00E96850 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122114831FC4BE5A00E96850 /* DetailViewController.m */; };
 		122114871FC4BE5A00E96850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122114851FC4BE5A00E96850 /* Main.storyboard */; };
 		122114891FC4BE5A00E96850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122114881FC4BE5A00E96850 /* Assets.xcassets */; };
 		1221148C1FC4BE5A00E96850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1221148A1FC4BE5A00E96850 /* LaunchScreen.storyboard */; };
@@ -19,8 +19,8 @@
 		1221147C1FC4BE5A00E96850 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1221147F1FC4BE5A00E96850 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		122114801FC4BE5A00E96850 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		122114821FC4BE5A00E96850 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		122114831FC4BE5A00E96850 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		122114821FC4BE5A00E96850 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		122114831FC4BE5A00E96850 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		122114861FC4BE5A00E96850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		122114881FC4BE5A00E96850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1221148B1FC4BE5A00E96850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			children = (
 				1221147F1FC4BE5A00E96850 /* AppDelegate.h */,
 				122114801FC4BE5A00E96850 /* AppDelegate.m */,
-				122114821FC4BE5A00E96850 /* ViewController.h */,
-				122114831FC4BE5A00E96850 /* ViewController.m */,
+				122114821FC4BE5A00E96850 /* DetailViewController.h */,
+				122114831FC4BE5A00E96850 /* DetailViewController.m */,
 				122114851FC4BE5A00E96850 /* Main.storyboard */,
 				122114881FC4BE5A00E96850 /* Assets.xcassets */,
 				1221148A1FC4BE5A00E96850 /* LaunchScreen.storyboard */,
@@ -97,6 +97,9 @@
 		122114741FC4BE5A00E96850 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Back,
+				);
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Anton Pavlov";
 				TargetAttributes = {
@@ -142,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				122114841FC4BE5A00E96850 /* ViewController.m in Sources */,
+				122114841FC4BE5A00E96850 /* DetailViewController.m in Sources */,
 				1221148F1FC4BE5A00E96850 /* main.m in Sources */,
 				122114811FC4BE5A00E96850 /* AppDelegate.m in Sources */,
 			);
@@ -279,8 +282,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W76ZQSY64Q;
+				DEVELOPMENT_TEAM = 92DDWGSQRK;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.bbrains.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,8 +297,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W76ZQSY64Q;
+				DEVELOPMENT_TEAM = 92DDWGSQRK;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.bbrains.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
