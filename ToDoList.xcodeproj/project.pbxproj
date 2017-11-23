@@ -13,6 +13,7 @@
 		122114891FC4BE5A00E96850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122114881FC4BE5A00E96850 /* Assets.xcassets */; };
 		1221148C1FC4BE5A00E96850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1221148A1FC4BE5A00E96850 /* LaunchScreen.storyboard */; };
 		1221148F1FC4BE5A00E96850 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1221148E1FC4BE5A00E96850 /* main.m */; };
+		1221149A1FC62C3F00E96850 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122114991FC62C3F00E96850 /* MainTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1221148B1FC4BE5A00E96850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1221148D1FC4BE5A00E96850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1221148E1FC4BE5A00E96850 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		122114981FC62C3F00E96850 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		122114991FC62C3F00E96850 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				1221148A1FC4BE5A00E96850 /* LaunchScreen.storyboard */,
 				1221148D1FC4BE5A00E96850 /* Info.plist */,
 				1221148E1FC4BE5A00E96850 /* main.m */,
+				122114981FC62C3F00E96850 /* MainTableViewController.h */,
+				122114991FC62C3F00E96850 /* MainTableViewController.m */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1221149A1FC62C3F00E96850 /* MainTableViewController.m in Sources */,
 				122114841FC4BE5A00E96850 /* DetailViewController.m in Sources */,
 				1221148F1FC4BE5A00E96850 /* main.m in Sources */,
 				122114811FC4BE5A00E96850 /* AppDelegate.m in Sources */,
@@ -282,7 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92DDWGSQRK;
+				DEVELOPMENT_TEAM = W76ZQSY64Q;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -297,7 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92DDWGSQRK;
+				DEVELOPMENT_TEAM = W76ZQSY64Q;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
