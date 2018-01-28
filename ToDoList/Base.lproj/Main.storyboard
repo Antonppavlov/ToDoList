@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6LI-kj-crn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6LI-kj-crn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--TO DO-->
         <scene sceneID="9w4-fs-NGx">
             <objects>
                 <tableViewController id="8YM-0Y-phg" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="8YM-0Y-phg" id="wSb-eb-bNX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="CTx-Jg-624">
+                    <navigationItem key="navigationItem" title="TO DO" id="CTx-Jg-624">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ECd-GD-z9t">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="FYY-Nd-Xvv"/>
@@ -101,13 +101,17 @@
                                     <!--2017-11-21 21:13:40 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVU-L8-yDx">
-                                <rect key="frame" x="138" y="568" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVU-L8-yDx">
+                                <rect key="frame" x="20" y="587" width="335" height="30"/>
                                 <state key="normal" title="Сохранить"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tz9-zp-Hgn" firstAttribute="bottom" secondItem="mVU-L8-yDx" secondAttribute="bottom" constant="50" id="Fq3-Oe-c1N"/>
+                            <constraint firstItem="mVU-L8-yDx" firstAttribute="leading" secondItem="Tz9-zp-Hgn" secondAttribute="leading" constant="20" id="cdV-cd-St5"/>
+                            <constraint firstItem="Tz9-zp-Hgn" firstAttribute="trailing" secondItem="mVU-L8-yDx" secondAttribute="trailing" constant="20" id="sgd-pc-jdP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tz9-zp-Hgn"/>
                     </view>
                     <navigationItem key="navigationItem" id="eOn-Iy-FBg"/>

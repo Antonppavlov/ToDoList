@@ -61,19 +61,43 @@
 		1221147E1FC4BE5A00E96850 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				1221147F1FC4BE5A00E96850 /* AppDelegate.h */,
-				122114801FC4BE5A00E96850 /* AppDelegate.m */,
-				122114821FC4BE5A00E96850 /* DetailViewController.h */,
-				122114831FC4BE5A00E96850 /* DetailViewController.m */,
-				122114851FC4BE5A00E96850 /* Main.storyboard */,
+				12A43E24201E639000C93E26 /* delegate */,
+				12A43E23201E635A00C93E26 /* storyboard */,
+				12A43E22201E634000C93E26 /* viewController */,
 				122114881FC4BE5A00E96850 /* Assets.xcassets */,
-				1221148A1FC4BE5A00E96850 /* LaunchScreen.storyboard */,
 				1221148D1FC4BE5A00E96850 /* Info.plist */,
 				1221148E1FC4BE5A00E96850 /* main.m */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		12A43E22201E634000C93E26 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				122114821FC4BE5A00E96850 /* DetailViewController.h */,
+				122114831FC4BE5A00E96850 /* DetailViewController.m */,
 				122114981FC62C3F00E96850 /* MainTableViewController.h */,
 				122114991FC62C3F00E96850 /* MainTableViewController.m */,
 			);
-			path = ToDoList;
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		12A43E23201E635A00C93E26 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				122114851FC4BE5A00E96850 /* Main.storyboard */,
+				1221148A1FC4BE5A00E96850 /* LaunchScreen.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		12A43E24201E639000C93E26 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				122114801FC4BE5A00E96850 /* AppDelegate.m */,
+				1221147F1FC4BE5A00E96850 /* AppDelegate.h */,
+			);
+			name = delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
